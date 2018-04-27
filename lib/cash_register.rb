@@ -1,6 +1,6 @@
 
 class CashRegister
-  attr_accessor :total, :title, :quantity
+  attr_accessor :total, :title, :quantity, :price
   @@cart = []
 
   def initialize(total = 0)
@@ -46,7 +46,7 @@ class CashRegister
 
   def void_last_transaction
     self.class.cart.pop
-    @total = @total - 
+    @total = @total -
   end
 
 end
