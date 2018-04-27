@@ -27,6 +27,7 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
+    @total = @total + @price*@quantity
     @quantity.times{self.class.cart << @title}
     @total
   end
